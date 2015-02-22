@@ -62,4 +62,4 @@ melt_data      = melt(data, id = id_labels, measure.vars = data_labels)
 tidy_data   = dcast(melt_data, subject + Activity_Label ~ variable, mean)
 
 # Uploading the data set as a txt file created with write.table() using row.name=FALSE.
-write.table(tidy_data, file = "./tidy_data.txt", row.name=FALSE)
+write.table(tidy_data, file = "./tidy_data.txt")
